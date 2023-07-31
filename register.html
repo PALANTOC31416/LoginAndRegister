@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styleForms.css">
+</head>
+<body>
+    <div class="login container-form">
+        <form action="validateRegisterUser.php" method="POST" class="w-100 text-center m-auto" id="formRegister">
+            <h1 class="text-center">Registrarse</h1>
+            <img src="images/002-registro.png" class="text-center m-auto" alt="login.png">
+            <div class="col-md-8 m-auto">
+                <label for="validationServerUserName" class="form-label">Nombre</label>
+                <div class="input-group has-validation">
+                    <input type="text" name="nameUser" class="form-control is-invalid" id="validationServerUserName"
+                           aria-describedby="inputGroupPrepend3 validationServerUserNameFeedback" required>
+                    <div id="validationServerUserNameFeedback" class="invalid-feedback">
+                        Escriba su nombre!!.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 m-auto">
+                <label for="validationServerGmail" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="email" name="gmail" class="form-control is-invalid" id="validationServerGmail"
+                           aria-describedby="inputGroupPrepend3 validationServerGmailFeedback" required>
+                    <div id="validationServerGmailFeedback" class="invalid-feedback">
+                        Escribe un correo valido!!.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 m-auto">
+                <label for="validationServerPassword" class="form-label">Password</label>
+                <div class="input-group has-validation">
+                    <input type="password" name="password" class="form-control is-invalid" id="validationServerPassword"
+                           aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
+                    <div id="validationServerPasswordFeedback" class="invalid-feedback">
+                        Ingrese una contraseña valida y confiable!!.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12">
+                <button class="btn btn-outline-primary" type="submit" style="margin-top: 10px">Registrarme</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/validateRegisterUser.js"></script>
+</body>
+</html>

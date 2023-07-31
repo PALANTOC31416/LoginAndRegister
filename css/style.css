@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    border: 0;
+}
+
+/*encabezado*/
+
+header {
+    content: "";
+    width: auto;
+    height: 500px;
+    background-image: url("../images/kari-shea-1SAnrIxw5OY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 170px;
+}
+
+header:before {
+    content: "";
+    width: auto;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 70%;
+    background-color: #3895ea;
+}
+
+.contend-header {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    border: 2px white solid;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.contend-header h1 {
+    font-size: 50px;
+    color: white;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.contend-header p {
+    color: white;
+    font-size: 18px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+}
+/*fin encabezado*/
+
+/*menu*/
+
+/*fin menu*/
+
+/*posts*/
+.posts .card {
+    margin-top: 5%;
+}
+/*fin posts*/
